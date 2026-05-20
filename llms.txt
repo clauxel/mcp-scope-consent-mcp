@@ -1,12 +1,15 @@
-# MCP Scope Consent Remote MCP
+# MCP Scope Consent
 
-Paid remote MCP for MCP consent scope receipt, structured receipts, audit logs, and reviewer-ready evidence.
+MCP Scope Consent is a hosted remote MCP for MCP consent scope receipt.
 
 Website: https://mcpscopeconsent.clauxel.com/
+Docs pattern reference: https://github.com/clauxel/MiroFish
+Primary keyword: MCP consent scope receipt
+Type: MCP
+Default plan: team
 MCP endpoint: https://mcpscopeconsent.clauxel.com/mcp
 Server card: https://mcpscopeconsent.clauxel.com/server-card.json
-Docs: https://github.com/clauxel/mcp-scope-consent-mcp
-
-Use case: MCP consent scope receipt with structured receipts.
-Authentication: Bearer token required for production use.
+Registry name: com.clauxel.mcpscopeconsent/mcpscopeconsent-mcp
 Tools: check_scope_consent, issue_consent_receipt, explain_scope_policy, log_tool_call, export_scope_audit
+
+Public boundary: docs-only repository; no production source code or secrets.
