@@ -1,13 +1,11 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.clauxel.mcpscopeconsent/mcpscopeconsent-mcp",
-  "description": "MCP Scope Consent is a hosted remote MCP for MCP consent scope receipt.",
+  "title": "MCP Scope Consent Remote MCP",
+  "description": "Paid remote MCP for MCP consent scope receipt, structured receipts, audit logs, and reviewer-ready evidence.",
   "version": "1.0.0",
-  "website_url": "https://mcpscopeconsent.clauxel.com/",
-  "repository": {
-    "url": "https://github.com/clauxel/mcp-scope-consent-mcp",
-    "source": "github"
-  },
+  "websiteUrl": "https://mcpscopeconsent.clauxel.com/",
+  "documentationUrl": "https://github.com/clauxel/mcp-scope-consent-mcp",
+  "serverCardUrl": "https://mcpscopeconsent.clauxel.com/server-card.json",
   "remotes": [
     {
       "type": "streamable-http",
@@ -15,17 +13,15 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer token from the product website.",
-          "is_required": true,
-          "is_secret": true
+          "description": "Bearer token from the product website."
         }
       ]
     }
   ],
-  "_meta": {
-    "io.modelcontextprotocol.registry/publisher-provided": {
-      "title": "MCP Scope Consent MCP",
-      "server_card_url": "https://mcpscopeconsent.clauxel.com/server-card.json"
-    }
-  }
+  "tags": [
+    "scope",
+    "consent",
+    "receipt",
+    "remote-mcp"
+  ]
 }
